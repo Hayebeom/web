@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            background-color: lightgray;
+        }
+
+        th,
+        td {
+            padding: 12px;
+        }
+
+        div {
+            margin: 10px;
+            border: 1px dashed red;
+            padding: 10px;
+        }
+
+        input {
+            margin: 10px;
+            height: 20px
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 헤더부 -->
+        <div>
+            <h1>과정검색</h1>
+        </div>
+
+        <!-- 바디부 -->
+        <div>
+            <!-- 검색부 -->
+            <div>
+                <form>
+                    <select name="search" style="height:25px;">
+                        <option value="course" selected disabled>학과</option>
+                        <option value="course">담당교수</option>
+                        <option value="course">과정명</option>
+                        <input type="text" name="cosearch">
+                        <button type="button" style="height: 25px;">조회</button>
+                    </select>
+
+
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>과정번호</th>
+                                    <th>과정명</th>
+                                    <th>담당교수</th>
+                                    <th>정원</th>
+                                    <th>신청자수</th>
+                                    <th>마감여부</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>10000</td>
+                                    <td>자바기초</td>
+                                    <td>이교수</td>
+                                    <td>30</td>
+                                    <td>15</td>
+                                    <td>N</td>
+                                </tr>
+
+                                <tr>
+                                    <td>10021</td>
+                                    <td>데이터베이스</td>
+                                    <td>이교수</td>
+                                    <td>40</td>
+                                    <td>30</td>
+                                    <td>N</td>
+                                </tr>
+
+                                <tr>
+                                    <td>10031</td>
+                                    <td>HTML</td>
+                                    <td>김교수</td>
+                                    <td>30</td>
+                                    <td>30</td>
+                                    <td>Y</td>
+                                </tr>
+
+                                <tr>
+                                    <td>10033</td>
+                                    <td>자바스크립트</td>
+                                    <td>김교수</td>
+                                    <td>40</td>
+                                    <td>15</td>
+                                    <td>N</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 요약부 -->
+                    <div>
+                        <p>수강신청 가능과정 : <strong>5개</strong> 마감된 과정 : <strong>1개</strong></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!-- 푸터부 -->
+        <div>
+            <p>중앙</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

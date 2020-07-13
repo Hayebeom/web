@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!--
+div {
+            margin: 10px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+
+
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            background-color: lightgray;
+        }
+
+        th,
+        td {
+            padding: 6px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <!-- 헤더부 -->
+            <h1>수강신청 현황조회</h1>
+        </div>
+
+        <div>
+            <!-- 바디부 -->
+            <div>
+                <!-- 검색부 -->
+                <form>
+                    <label>학기</label>
+                    <select name="year">
+                        <option value="2020"> 2020 </option>
+                        <option value="2019"> 2019 </option>
+                        <option value="2018"> 2018 </option>
+                        <option value="2017"> 2017 </option>
+                        <option value="2016"> 2016 </option>
+                    </select>
+
+                    <select name="period">
+                        <option value="1"> 1학기 </option>
+                        <option value="2"> 2학기 </option>
+                    </select>
+
+                    <button tpye="submit">조회</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" name="courseAllChecked" value="Y" /></th>
+                                <th>과정번호</th>
+                                <th>과정명</th>
+                                <th>담당교수</th>
+                                <th>취소여부</th>
+                                <th>수료여부</th>
+                                <th>성적</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="courseChecked" value="10000" /></td>
+                                <td>10000</td>
+                                <td>데이터베이스 기초</td>
+                                <td>이교수</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                                <td><button type="button">삭제</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="courseChecked" value="10011" /></td>
+                                <td>10011</td>
+                                <td>전자계산기 일반</td>
+                                <td>이교수</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                                <td><button type="button">삭제</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="courseChecked" value="10071" disabled /></td>
+                                <td>10071</td>
+                                <td>이산 수학</td>
+                                <td>김교수</td>
+                                <td>Y</td>
+                                <td>N</td>
+                                <td>-</td>
+                                <td><button type="button">삭제</button></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <button type="submit"> 전체 취소</button>
+                    <button type="submit"> 선택 취소</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            중앙
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 7px 0;
+        }
+
+        input {
+            width: 162px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width : 200px" margin:10px auto;>
+        <div>
+            <h1>과정등록</h1>
+        </div>
+
+        <div style="background-color: #eeeeee; padding: 16px; border: 1px solid gray;">
+            <form>
+                <div><label>과목명</label></div>
+                <div>
+                    <select name="course">
+                        <option value="" selected disabled>선택하세요</option>
+                        <option value="computer">컴퓨터 개론</option>
+                    </select>
+                </div>
+
+                <div><label>담당교수</label></div>
+                <div>
+                    <select>
+                        <option value="" selected disabled>선택하세요</option>
+                        <option value="lee">이교수</option>
+                    </select>
+                </div>
+
+                <div><label>과정명</label></div>
+                <div><input type="text" name="titlename" style=""></div>
+
+                <div><label>정원</label></div>
+                <div><input type="text" name="max" placeholder="30"></div>
+
+                <div style="text-align: right">
+                    <button type="reset" style="padding: 2px 5px">취소</button>
+                    <button type="submit" style="padding: 2px 5px">등록</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <p>중앙</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
